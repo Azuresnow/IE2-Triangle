@@ -9,6 +9,8 @@ class TriangleTest(unittest.TestCase):
         actual = Triangle.classify(10, 10, 10)
         expected = Triangle.Type.EQUILATERAL
         self.assertEqual(actual, expected)
+   
+    
 
 if __name__ == '__main__':
     unittest.main()
