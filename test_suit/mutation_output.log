@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Scripts\mut.py", line 7, in <module>
+    commandline.main(sys.argv)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 10, in main
+    run_mutpy(parser)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 61, in run_mutpy
+    mutation_controller = build_controller(cfg)
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 68, in build_controller
+    runner_cls = get_runner_cls(cfg.runner)
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 88, in get_runner_cls
+    from mutpy.test_runners import UnittestTestRunner
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\test_runners\__init__.py", line 20, in <module>
+    if pytest_installed():
+       ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\test_runners\__init__.py", line 6, in pytest_installed
+    pytest_loader = importlib.find_loader('pytest')
+                    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'importlib' has no attribute 'find_loader'
+Traceback (most recent call last):
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Scripts\mut.py", line 7, in <module>
+    commandline.main(sys.argv)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 10, in main
+    run_mutpy(parser)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 61, in run_mutpy
+    mutation_controller = build_controller(cfg)
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 68, in build_controller
+    runner_cls = get_runner_cls(cfg.runner)
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\commandline.py", line 88, in get_runner_cls
+    from mutpy.test_runners import UnittestTestRunner
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\test_runners\__init__.py", line 20, in <module>
+    if pytest_installed():
+       ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Blue\AppData\Local\Programs\Python\Python313\Lib\site-packages\mutpy\test_runners\__init__.py", line 6, in pytest_installed
+    pytest_loader = importlib.find_loader('pytest')
+                    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'importlib' has no attribute 'find_loader'
