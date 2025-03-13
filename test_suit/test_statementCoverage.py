@@ -2,17 +2,13 @@ import unittest
 from isTriangle import Triangle
 
 class TriangleTest(unittest.TestCase):
-    def test1(self):
-        actual = Triangle.classify(10, 10, 15)
-        expected = Triangle.Type.ISOSCELES
-        self.assertEqual(actual, expected)
-   
-    def test3(self):
+
+
+    def testEq(self):
         actual = Triangle.classify(10, 10, 10)
         expected = Triangle.Type.EQUILATERAL
         self.assertEqual(actual, expected)
  
-        
         
     def testANegative(self):
         actual = Triangle.classify(-14, 3, 10)
@@ -26,13 +22,7 @@ class TriangleTest(unittest.TestCase):
         actual = Triangle.classify(15, 10, -6)
         expected = Triangle.Type.INVALID        
         self.assertEqual(actual, expected)
-    def testallNeg(self):
-        actual = Triangle.classify(-15, -10, -6)
-        expected = Triangle.Type.INVALID    
-        self.assertEqual(actual, expected)   
-        
-        
-        
+   
         
     def testTrianEq0Invalid(self):
         actual = Triangle.classify(40, 14, 10)
